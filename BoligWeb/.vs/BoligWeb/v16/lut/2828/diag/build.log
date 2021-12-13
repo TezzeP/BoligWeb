@@ -1,0 +1,52 @@
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(32,31): error CS0103: The name 'GetTestSession' does not exist in the current context
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(33,37): error CS0246: The type or namespace name 'IBrainstormSessionRepository' could not be found (are you missing a using directive or an assembly reference?)
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(36,34): error CS0246: The type or namespace name 'IdeasController' could not be found (are you missing a using directive or an assembly reference?)
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(38,31): error CS0246: The type or namespace name 'NewIdeaModel' could not be found (are you missing a using directive or an assembly reference?)
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(53,47): error CS0246: The type or namespace name 'BrainstormSession' could not be found (are you missing a using directive or an assembly reference?)
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(53,66): error CS0103: The name 'okResult' does not exist in the current context
+[22:02:50.000 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebTest\UnitTest1.cs(58,43): error CS0103: The name 'data' does not exist in the current context
+[22:02:50.000 Verbose] - BuildManager - E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Roslyn\Microsoft.CSharp.Core.targets(71,5): error MSB4181: The "Csc" task returned false but did not log an error.
+[22:02:50.005 Verbose] - BuildManager - Some of the file paths defined in the csproj under the Live Unit Testing build path are missing. Verify whether these files should be present under the Live Unit Testing build path and if necessary update the csproj definition to look these files up in a different place.
+[22:02:50.005 Verbose] - BuildManager - Item _OutputPathItem 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\Debug\net5.0\' evaluated via:
+_OutputPathItem: '$(OutDir)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:310
+  OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\' @ C:\Users\Tezze\Documents\Github\BoligWebTest\BoligWebTest.csproj:0
+        Configuration: 'Debug'
+[22:02:50.005 Verbose] - BuildManager - Item AppConfigFileDestination 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\Debug\net5.0\BoligWebTest.dll.config' evaluated via:
+AppConfigFileDestination: '$(OutDir)$(TargetFileName).config' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:338
+  OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\' @ C:\Users\Tezze\Documents\Github\BoligWebTest\BoligWebTest.csproj:0
+        Configuration: 'Debug'
+  TargetFileName: '$(TargetName)$(TargetExt)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:248
+    TargetName: '$(AssemblyName)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:240
+      AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+        MSBuildProjectName: 'BoligWebTest'
+    TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:99
+[22:02:50.006 Verbose] - BuildManager - Item CreateDirectory 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\Debug\net5.0\ref' evaluated via:
+CreateDirectory: '$(OutDir)ref' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:398
+  OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\' @ C:\Users\Tezze\Documents\Github\BoligWebTest\BoligWebTest.csproj:0
+        Configuration: 'Debug'
+[22:02:50.006 Verbose] - BuildManager - Item _DebugSymbolsOutputPath 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\Debug\net5.0\BoligWebTest.pdb' evaluated via:
+_DebugSymbolsOutputPath: '@(_DebugSymbolsIntermediatePath->'$(OutDir)%(Filename)%(Extension)')' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:404
+  OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\' @ C:\Users\Tezze\Documents\Github\BoligWebTest\BoligWebTest.csproj:0
+        Configuration: 'Debug'
+[22:02:50.006 Verbose] - BuildManager - Item _ApplicationManifestFinal 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\Debug\net5.0\Native.BoligWebTest.manifest' evaluated via:
+_ApplicationManifestFinal: '$(OutDir)$(_DeploymentTargetApplicationManifestFileName)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:442
+  OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebTest\' @ C:\Users\Tezze\Documents\Github\BoligWebTest\BoligWebTest.csproj:0
+        Configuration: 'Debug'
+  _DeploymentTargetApplicationManifestFileName: 'Native.$(AssemblyName).manifest' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:264
+    AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+      MSBuildProjectName: 'BoligWebTest'
