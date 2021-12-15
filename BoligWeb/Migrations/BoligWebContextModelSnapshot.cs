@@ -46,6 +46,23 @@ namespace BoligWebApi.Migrations
                     b.ToTable("Dokuments");
                 });
 
+            modelBuilder.Entity("BoligWebApi.Models.Konto", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConfirmPassword")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("Kontos");
+                });
+
             modelBuilder.Entity("BoligWebApi.Models.Post", b =>
                 {
                     b.Property<int>("Id")

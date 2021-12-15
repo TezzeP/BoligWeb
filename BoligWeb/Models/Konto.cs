@@ -9,6 +9,7 @@ namespace BoligWebApi.Models
     {
         [Required]
         [EmailAddress]
+        [Key]
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]

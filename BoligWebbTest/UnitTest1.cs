@@ -32,7 +32,6 @@ namespace BoligWebbTest
                 new Role() {Id = 5, RoleName = "RoleName5"},
                 new Role() {Id = 6, RoleName = "RoleName6"},
                 new Role() {Id = 7, RoleName = "RoleName7"},
-
             };
         }
 
@@ -40,7 +39,7 @@ namespace BoligWebbTest
         [Fact]
         public async Task CheckIfAnyRoleExists()
         {
-            //arrange
+            
             foreach (Role role in listRole)
             {
                 await roleController.PostRole(role);
@@ -54,7 +53,7 @@ namespace BoligWebbTest
         [Fact]
         public void CheckIfNORolesExist()
         {
-            //arrange
+            
 
             var result = roleController.GetRoles().Result.Value;
             Assert.NotNull(result);

@@ -1,0 +1,46 @@
+[23:28:11.614 Verbose] - BuildManager - Some of the paths are absolute. This may prevent Live Unit Testing from building to the correct location.
+[23:28:11.614 Verbose] - BuildManager - Property BaseOutputPath evaluated to 'bin\' via:
+BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+[23:28:11.614 Verbose] - BuildManager - Property BaseIntermediateOutputPath evaluated to 'E:\GItHub\BoligWeb\BoligWeb\obj\' via:
+BaseIntermediateOutputPath: '$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk.Publish\targets\Microsoft.NET.Sdk.Publish.targets:80
+  MSBuildProjectDirectory: 'E:\GItHub\BoligWeb\BoligWeb'
+  BaseIntermediateOutputPath: 'obj\' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Microsoft.Common.props:47
+[23:28:11.615 Verbose] - BuildManager - Property IntermediateOutputPath evaluated to 'obj\Debug\net5.0\' via:
+IntermediateOutputPath: '$(IntermediateOutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:241
+  IntermediateOutputPath: '$(BaseIntermediateOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:39
+    BaseIntermediateOutputPath: 'obj\' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Microsoft.Common.props:47
+    Configuration: 'Debug'
+[23:28:11.615 Verbose] - BuildManager - Property OutputPath evaluated to 'bin\Debug\net5.0\' via:
+OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+  OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+    BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+    Configuration: 'Debug'
+[23:28:11.615 Verbose] - BuildManager - Property OutDir evaluated to 'bin\Debug\net5.0\' via:
+OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+  OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+    OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+      BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+      Configuration: 'Debug'
+[23:28:13.219 Verbose] - BuildManager - Some of the paths are absolute. This may prevent Live Unit Testing from building to the correct location.
+[23:28:13.219 Verbose] - BuildManager - Property BaseOutputPath evaluated to 'bin\' via:
+BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+[23:28:13.220 Verbose] - BuildManager - Property BaseIntermediateOutputPath evaluated to 'E:\GItHub\BoligWeb\BoligWebApp\obj\' via:
+BaseIntermediateOutputPath: '$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk.Publish\targets\Microsoft.NET.Sdk.Publish.targets:80
+  MSBuildProjectDirectory: 'E:\GItHub\BoligWeb\BoligWebApp'
+  BaseIntermediateOutputPath: 'obj\' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Microsoft.Common.props:47
+[23:28:13.220 Verbose] - BuildManager - Property IntermediateOutputPath evaluated to 'obj\Debug\net5.0\' via:
+IntermediateOutputPath: '$(IntermediateOutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:241
+  IntermediateOutputPath: '$(BaseIntermediateOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:39
+    BaseIntermediateOutputPath: 'obj\' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Microsoft.Common.props:47
+    Configuration: 'Debug'
+[23:28:13.226 Verbose] - BuildManager - Property OutputPath evaluated to 'bin\Debug\net5.0\' via:
+OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+  OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+    BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+    Configuration: 'Debug'
+[23:28:13.227 Verbose] - BuildManager - Property OutDir evaluated to 'bin\Debug\net5.0\' via:
+OutDir: '$(OutputPath)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+  OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:242
+    OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+      BaseOutputPath: 'bin\' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:31
+      Configuration: 'Debug'

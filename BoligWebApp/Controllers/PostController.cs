@@ -43,6 +43,23 @@ namespace BoligWebApp.Controllers
             return View(posts);
 
         }
+
+        public ActionResult Create()
+        {
+            var posts = new Post();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = client.GetAsync("api/Posts/{id}").Result;
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                posts = JsonConvert.DeserializeObject<Post>(result);
+            }
+            return View();
+        }
+
+
+
+
         public async Task<IActionResult> Create(Post post)
         {
 
@@ -81,20 +98,20 @@ namespace BoligWebApp.Controllers
             return View();
         }
 
-        //public async Task<IActionResult> Edit(int id)
-        //{
-        //    var posts = new Post();
-        //    HttpClient client = _api.Initial();
-        //    HttpResponseMessage res = await client.Async("api/Dokuments/{id}");
-        //    if (res.IsSuccessStatusCode)
-        //    {
-        //        var result = res.Content.ReadAsStringAsync().Result;
-        //        posts = JsonConvert.DeserializeObject<Post>(result);
-        //    }
+        public async Task<IActionResult> Edit(int id)
+        {
+            var posts = new Post();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.PutAsJsonAsync<Post>("api/Posts/{id}", posts);
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                posts = JsonConvert.DeserializeObject<Post>(result);
+            }
 
-        //    return View(posts);
+            return View(posts);
 
-        //}
+        }
     }
 }
 

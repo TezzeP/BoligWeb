@@ -23,7 +23,7 @@ namespace BoligWebApp.Controllers
             List<Konto> posts = new List<Konto>();
 
             HttpClient client = _api.Initial();
-            HttpResponseMessage res = await client.GetAsync("api/Posts");
+            HttpResponseMessage res = await client.GetAsync("api/Kontos");
             if (res.IsSuccessStatusCode)
             {
                 var result = res.Content.ReadAsStringAsync().Result;
@@ -32,7 +32,8 @@ namespace BoligWebApp.Controllers
 
             return View(posts);
         }
-
+        
+       
 
         public async Task<IActionResult> Details(int? id)
         {
@@ -48,14 +49,33 @@ namespace BoligWebApp.Controllers
             return View(konto);
 
         }
+        public async Task<IActionResult> CreateUser(Konto konto)
+        {
+            HttpClient client = _api.Initial();
+            var postTask = await client.PostAsJsonAsync<Konto>("api/Kontos", konto);
+            
+
+            return View(konto);
+
+        }
+
+        public ActionResult Create()
+        {
+
+            return View();
+        }
+
+
         public async Task<IActionResult> Create(Konto konto)
         {
 
             HttpClient client = _api.Initial();
             var postTask = await client.PostAsJsonAsync<Konto>("api/Kontos", konto);
 
+
             return View(konto);
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             var konto = new Konto();

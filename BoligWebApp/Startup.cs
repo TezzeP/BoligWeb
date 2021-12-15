@@ -49,7 +49,7 @@ namespace BoligWebApp
 
             app.UseRouting();
 
-            app.UseIdentityServer();
+           
 
             app.UseAuthentication();
 

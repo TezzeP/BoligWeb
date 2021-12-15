@@ -24,7 +24,7 @@ namespace BoligWebApi.Controllers
 
         // GET: api/Roles
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Konto>>> GetRoles()
+        public async Task<ActionResult<IEnumerable<Role>>> GetRoles()
         {
             var results = await _context.Roles.ToListAsync();
             return results;
@@ -32,7 +32,7 @@ namespace BoligWebApi.Controllers
 
         // GET: api/Roles/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Konto>> GetRole(int id)
+        public async Task<ActionResult<Role>> GetRole(int id)
         {
             if (id <= 0)
             {
@@ -53,7 +53,7 @@ namespace BoligWebApi.Controllers
         // PUT: api/Roles/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRole(int id, Konto role)
+        public async Task<IActionResult> PutRole(int id, Role role)
         {
             if (id != role.Id)
             {
@@ -81,7 +81,7 @@ namespace BoligWebApi.Controllers
         // POST: api/Roles
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Konto>> PostRole([FromBody]Konto role)
+        public async Task<ActionResult<Konto>> PostRole([FromBody]Role role)
         {
             _context.Roles.Add(role);
             await _context.SaveChangesAsync();

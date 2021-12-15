@@ -10823,11 +10823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tezze\\Documents\\Github\\BoligWebbTest\\BoligWebbTest.csproj",
+      "projectUniqueName": "E:\\GItHub\\BoligWeb\\BoligWebbTest\\BoligWebbTest.csproj",
       "projectName": "BoligWebbTest",
-      "projectPath": "C:\\Users\\Tezze\\Documents\\Github\\BoligWebbTest\\BoligWebbTest.csproj",
+      "projectPath": "E:\\GItHub\\BoligWeb\\BoligWebbTest\\BoligWebbTest.csproj",
       "packagesPath": "C:\\Users\\Tezze\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tezze\\Documents\\Github\\BoligWebbTest\\obj\\",
+      "outputPath": "E:\\GItHub\\BoligWeb\\BoligWebbTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Programmer\\ProgramData\\Microsoft\\Visual Studio\\Shared\\NuGetPackages"
@@ -10848,8 +10848,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Tezze\\Documents\\Github\\BoligWeb\\BoligWebApi.csproj": {
-              "projectPath": "C:\\Users\\Tezze\\Documents\\Github\\BoligWeb\\BoligWebApi.csproj"
+            "E:\\GItHub\\BoligWeb\\BoligWeb\\BoligWebApi.csproj": {
+              "projectPath": "E:\\GItHub\\BoligWeb\\BoligWeb\\BoligWebApi.csproj"
             }
           }
         }

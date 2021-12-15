@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,14 +15,21 @@ namespace BoligWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="Admin")]
+
 
     public class KontoController : ControllerBase
     {
         private readonly BoligWebContext _context;
+        private readonly UserManager<IdentityUser> userManager;
+        private readonly SignInManager<IdentityUser> signInManager;
 
-        public KontoController(BoligWebContext context)
+        public KontoController(BoligWebContext context, UserManager<IdentityUser> userManager, 
+                                                        SignInManager<IdentityUser> signInManager )
         {
             _context = context;
+            this.userManager = userManager;
+            this.signInManager = signInManager;
         }
 
         // GET: api/Kontos
@@ -53,9 +62,9 @@ namespace BoligWebApi.Controllers
         // PUT: api/Roles/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutKonto(int id, Konto konto)
+        public async Task<IActionResult> PutKonto(string email, Konto konto)
         {
-            if (id != konto.Id)
+            if (email != konto.Email)
             {
                 return BadRequest();
             }
@@ -68,7 +77,7 @@ namespace BoligWebApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!RoleExists(id))
+                if (!KontoExists(email))
                 {
                     return NotFound();
                 }
@@ -83,10 +92,24 @@ namespace BoligWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Konto>> PostKonto([FromBody] Konto konto)
         {
-            _context.Kontos.Add(konto);
-            await _context.SaveChangesAsync();
+            if (ModelState.IsValid)
+            {
+                var user = new IdentityUser { UserName = konto.Email, Email = konto.Email };
+                var result = await userManager.CreateAsync(user, konto.Password);
+                 if (result.Succeeded)
+                {
+                    Console.WriteLine(result);
+                    signInManager.SignInAsync(user, isPersistent: true);
+                    return RedirectToAction("Index","Home");
+                }
+                 foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
 
-            return CreatedAtAction("GetRole", new { id = konto.Id }, konto);
+
+            return konto;
         }
 
         // DELETE: api/Roles/5
@@ -110,9 +133,9 @@ namespace BoligWebApi.Controllers
             return Ok();
         }
 
-        private bool RoleExists(int id)
+        private bool KontoExists(string email)
         {
-            return _context.Roles.Any(e => e.Id == id);
+            return _context.Kontos.Any(e => e.Email == email );
         }
     }
 }
