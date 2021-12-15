@@ -1,0 +1,5 @@
+C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\i\BoligWebApp\net5.0\BoligWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\i\BoligWebApp\net5.0\BoligWebApp.AssemblyInfoInputs.cache
+C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\i\BoligWebApp\net5.0\BoligWebApp.AssemblyInfo.cs
+C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\i\BoligWebApp\net5.0\BoligWebApp.RazorAssemblyInfo.cache
+C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\i\BoligWebApp\net5.0\BoligWebApp.RazorAssemblyInfo.cs

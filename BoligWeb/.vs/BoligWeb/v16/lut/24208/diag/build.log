@@ -1,0 +1,31 @@
+[11:44:12.646 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebApp\Controllers\RoleController.cs(85,17): error CS1002: ; expected
+[11:44:12.646 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebApp\Controllers\RoleController.cs(21,22): warning CS0169: The field 'RoleController.roleToUpdate' is never used
+[11:44:12.646 Verbose] - BuildManager - C:\Users\Tezze\Documents\Github\BoligWebApp\Controllers\RoleController.cs(20,21): warning CS0169: The field 'RoleController.idToUpdate' is never used
+[11:44:12.646 Verbose] - BuildManager - E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Roslyn\Microsoft.CSharp.Core.targets(71,5): error MSB4181: The "Csc" task returned false but did not log an error.
+[11:44:12.686 Verbose] - BuildManager - Some of the file paths defined in the csproj under the Live Unit Testing build path are missing. Verify whether these files should be present under the Live Unit Testing build path and if necessary update the csproj definition to look these files up in a different place.
+[11:44:12.687 Verbose] - BuildManager - Item _OutputPathItem 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' evaluated via:
+_OutputPathItem: '$(OutDir)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:310
+  OutDir: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' @ C:\Users\Tezze\Documents\Github\BoligWebApp\BoligWebApp.csproj:0
+[11:44:12.688 Verbose] - BuildManager - Item AppConfigFileDestination 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\BoligWebApp.dll.config' evaluated via:
+AppConfigFileDestination: '$(OutDir)$(TargetFileName).config' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:338
+  OutDir: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' @ C:\Users\Tezze\Documents\Github\BoligWebApp\BoligWebApp.csproj:0
+  TargetFileName: '$(TargetName)$(TargetExt)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:248
+    TargetName: '$(AssemblyName)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:240
+      AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+        MSBuildProjectName: 'BoligWebApp'
+    TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:99
+[11:44:12.690 Verbose] - BuildManager - Item CreateDirectory 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\ref' evaluated via:
+CreateDirectory: '$(OutDir)ref' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:398
+  OutDir: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' @ C:\Users\Tezze\Documents\Github\BoligWebApp\BoligWebApp.csproj:0
+[11:44:12.700 Verbose] - BuildManager - Item _DebugSymbolsOutputPath 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\BoligWebApp.pdb' evaluated via:
+_DebugSymbolsOutputPath: '@(_DebugSymbolsIntermediatePath->'$(OutDir)%(Filename)%(Extension)')' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:404
+  OutDir: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' @ C:\Users\Tezze\Documents\Github\BoligWebApp\BoligWebApp.csproj:0
+[11:44:12.700 Verbose] - BuildManager - Item _ApplicationManifestFinal 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\BoligWebApp.dll.manifest' evaluated via:
+_ApplicationManifestFinal: '$(OutDir)$(_DeploymentTargetApplicationManifestFileName)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:442
+  OutDir: 'C:\Users\Tezze\Documents\Github\BoligWeb\.vs\BoligWeb\v16\lut\0\b\BoligWebApp\bin\Debug\net5.0\' @ C:\Users\Tezze\Documents\Github\BoligWebApp\BoligWebApp.csproj:0
+  _DeploymentTargetApplicationManifestFileName: '$(TargetFileName).manifest' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:268
+    TargetFileName: '$(TargetName)$(TargetExt)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:248
+      TargetName: '$(AssemblyName)' @ E:\Programmer\Visual Studio\Visual Studio Software\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:240
+        AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+          MSBuildProjectName: 'BoligWebApp'
+      TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\5.0.403\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:99

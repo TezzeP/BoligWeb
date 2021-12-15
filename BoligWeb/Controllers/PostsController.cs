@@ -6,15 +6,19 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BoligWebApi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace BoligWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class PostsController : ControllerBase
     {
         private readonly BoligWebContext _context;
 
+        
         public PostsController(BoligWebContext context)
         {
             _context = context;
@@ -38,7 +42,7 @@ namespace BoligWebApi.Controllers
                 return NotFound();
             }
 
-            return post;
+            return Ok(post);
         }
 
         // PUT: api/Posts/5

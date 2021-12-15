@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoligWebApp.Helper
 {
-    public class FilesApi
+    public class HttpClientHelperApi
     {
         public HttpClient Initial()
         {

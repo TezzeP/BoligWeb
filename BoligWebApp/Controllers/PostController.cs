@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 using BoligWebApp.Helper;
 using BoligWebApp.Models;
@@ -12,7 +11,7 @@ namespace BoligWebApp.Controllers
 {
     public class PostController : Controller
     {
-        FilesApi _api = new();
+        HttpClientHelperApi _api = new();
 
         public async Task<IActionResult> Index()
         {
@@ -34,7 +33,7 @@ namespace BoligWebApp.Controllers
         {
             var posts = new Post();
             HttpClient client = _api.Initial();
-            HttpResponseMessage res = await client.GetAsync("api/Dokuments/{id}");
+            HttpResponseMessage res = await client.GetAsync("api/Posts/{id}");
             if (res.IsSuccessStatusCode)
             {
                 var result = res.Content.ReadAsStringAsync().Result;
@@ -44,8 +43,45 @@ namespace BoligWebApp.Controllers
             return View(posts);
 
         }
+        public async Task<IActionResult> Create(Post post)
+        {
 
-        //public async Task<IActionResult> Edit(int? id)
+            HttpClient client = _api.Initial();
+            var postTask = await client.PostAsJsonAsync<Post>("api/Posts", post);
+            
+            return View(post);
+        }
+        public async Task<IActionResult> Delete(int? id)
+        {
+            var post = new Post();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.DeleteAsync("api/Posts/{id}");
+
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                post = JsonConvert.DeserializeObject<Post>(result);
+            }
+
+            return View(post);
+
+        }
+        public  ActionResult Edit()
+        {
+            var posts = new Post();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = client.GetAsync("api/Posts/{id}").Result;
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                posts = JsonConvert.DeserializeObject<Post>(result);
+            }
+
+            
+            return View();
+        }
+
+        //public async Task<IActionResult> Edit(int id)
         //{
         //    var posts = new Post();
         //    HttpClient client = _api.Initial();

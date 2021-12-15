@@ -11,7 +11,7 @@ namespace BoligWebApp.Controllers
 {
     public class DokumentsController : Controller
     {
-        FilesApi _api = new FilesApi();
+        HttpClientHelperApi _api = new HttpClientHelperApi();
 
         public async Task<IActionResult> Index()
         {
@@ -36,7 +36,7 @@ namespace BoligWebApp.Controllers
             if (res.IsSuccessStatusCode)
             {
                 var result = res.Content.ReadAsStringAsync().Result;
-                dokument = JsonConvert.DeserializeObject<Models.Dokument>(result);
+                dokument = JsonConvert.DeserializeObject< Dokument>(result);
             }
 
             return View(dokument);
@@ -48,9 +48,16 @@ namespace BoligWebApp.Controllers
             var dokument = new Dokument();
             HttpClient client = _api.Initial();
             HttpResponseMessage res = await client.DeleteAsync("api/Dokuments/{id}");
-            
 
-            return RedirectToAction("Index");
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                dokument = JsonConvert.DeserializeObject<Dokument>(result);
+            }
+
+            return View(dokument);
+
+
 
         }
 

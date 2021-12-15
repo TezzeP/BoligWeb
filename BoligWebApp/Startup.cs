@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BoligWebApi.Models;
+using BoligWebApi;
 
 namespace BoligWebApp
 {
@@ -25,6 +26,8 @@ namespace BoligWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
+                
             services.AddControllersWithViews();
         }
 
@@ -45,6 +48,10 @@ namespace BoligWebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseIdentityServer();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

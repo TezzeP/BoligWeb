@@ -158,7 +158,6 @@ C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\BoligWebApp.pdb
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\BoligWebApp.genruntimeconfig.cache
 C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\BoligWebApi.Views.dll
@@ -174,6 +173,17 @@ C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Post\De
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Post\Details.cshtml.g.cs
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Post\Index.cshtml.g.cs
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Dokuments\Create.cshtml.g.cs
-C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Post\Edit.cshtml.g.cs
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
 C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
+C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Role\Delete.cshtml.g.cs
+C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Role\Details.cshtml.g.cs
+C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Role\Update.cshtml.g.cs
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.Owin.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Owin.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\IdentityModel.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\IdentityServer4.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\IdentityServer4.Storage.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Tezze\Documents\Github\BoligWebApp\obj\Debug\net5.0\Razor\Views\Konto\Index.cshtml.g.cs
