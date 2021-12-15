@@ -1,6 +1,0 @@
-C:\Users\Tezze\Documents\Github\BoligWebTest\bin\Debug\net5.0\CoverletSourceRootsMapping
-C:\Users\Tezze\Documents\Github\BoligWebTest\obj\Debug\net5.0\BoligWebTest.csproj.AssemblyReference.cache
-C:\Users\Tezze\Documents\Github\BoligWebTest\obj\Debug\net5.0\BoligWebTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tezze\Documents\Github\BoligWebTest\obj\Debug\net5.0\BoligWebTest.AssemblyInfoInputs.cache
-C:\Users\Tezze\Documents\Github\BoligWebTest\obj\Debug\net5.0\BoligWebTest.AssemblyInfo.cs
-C:\Users\Tezze\Documents\Github\BoligWebTest\obj\Debug\net5.0\BoligWebTest.csproj.CoreCompileInputs.cache
