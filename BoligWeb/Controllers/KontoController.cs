@@ -99,7 +99,7 @@ namespace BoligWebApi.Controllers
                  if (result.Succeeded)
                 {
                     Console.WriteLine(result);
-                    signInManager.SignInAsync(user, isPersistent: true);
+                    await signInManager.SignInAsync(user, isPersistent: true);
                     return RedirectToAction("Index","Home");
                 }
                  foreach(var error in result.Errors)

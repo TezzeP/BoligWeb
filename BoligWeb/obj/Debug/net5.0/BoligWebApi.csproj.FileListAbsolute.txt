@@ -258,8 +258,6 @@ E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.d
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.OpenApi.dll
-E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.Owin.dll
-E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.Owin.Host.SystemWeb.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -269,7 +267,6 @@ E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGene
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Newtonsoft.Json.dll
-E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Owin.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\GItHub\BoligWeb\BoligWeb\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
