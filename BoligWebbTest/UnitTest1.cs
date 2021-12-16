@@ -38,8 +38,7 @@ namespace BoligWebbTest
         //Check of the GetRoles method
         [Fact]
         public async Task CheckIfAnyRoleExists()
-        {
-            
+        {                       
             foreach (Role role in listRole)
             {
                 await roleController.PostRole(role);

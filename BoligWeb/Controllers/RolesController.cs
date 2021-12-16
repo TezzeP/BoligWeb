@@ -75,7 +75,7 @@ namespace BoligWebApi.Controllers
                
             }
 
-            return NoContent();
+            return  NoContent();
         }
 
         // POST: api/Roles

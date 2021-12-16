@@ -11,7 +11,7 @@ namespace BoligWebApp.Helper
         public HttpClient Initial()
         {
             var Client = new HttpClient();
-            Client.BaseAddress = new Uri("http://localhost:50651/");
+            Client.BaseAddress = new Uri("http://localhost:50651/"); //50651
             return Client;
         }
 

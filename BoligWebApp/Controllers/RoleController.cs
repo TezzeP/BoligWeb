@@ -94,9 +94,21 @@ namespace BoligWebApp.Controllers
             //return View(role);
 
         }
-        public async Task<IActionResult> Update(string roleName)
+        public async Task<IActionResult> Update(Role role)
         {
-            Role role = new Role();
+
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync("api/Roles/{id}");
+            if (res.IsSuccessStatusCode)
+            {
+                //var result = res.Content.().Result;
+                //role = JsonConvert.DeserializeObject<Role>(result);
+            }
+            return View();
+
+        }
+
+        /*Role role = new Role();
             role.Id = idToUpdate;
             role.RoleName = roleName;
             
@@ -109,19 +121,12 @@ namespace BoligWebApp.Controllers
                 var result = putTask.Content.ReadAsStringAsync().Result;
                 role = JsonConvert.DeserializeObject<Role>(result);
             }
-            return View();
-        }
+            return View();*/
 
 
 
 
-        //HttpClient client = _api.Initial();
-        //HttpResponseMessage res = await client.GetAsync("api/Roles/{id}");
-        //if (res.IsSuccessStatusCode)
-        //{
-        //    var result = res.Content.().Result;
-        //    role = JsonConvert.DeserializeObject<Role>(result);
-        //}
+
 
 
     }

@@ -375,4 +375,3 @@ E:\GItHub\BoligWeb\BoligWebApp\obj\Debug\net5.0\BoligWebApp.pdb
 E:\GItHub\BoligWeb\BoligWebApp\obj\Debug\net5.0\BoligWebApp.genruntimeconfig.cache
 E:\GItHub\BoligWeb\BoligWebApp\obj\Debug\net5.0\Razor\Views\Konto\Create.cshtml.g.cs
 E:\GItHub\BoligWeb\BoligWebApp\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-E:\GItHub\BoligWeb\BoligWebApp\bin\Debug\net5.0\BoligWebApi.StaticWebAssets.xml
